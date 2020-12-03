@@ -1,6 +1,6 @@
 open Printf
 
-let ime_datoteke = "day_1/day_1.in"
+let ime_datoteke = "Day_1/day_1.in"
 
 let read_file filename = 
   let lines = ref [] in
@@ -67,10 +67,10 @@ let _ =
   output_string chan vsebina;
   close_out chan
   in
-  let vsebina_datoteke = read_file "day_1/day_1.in" in
+  let vsebina_datoteke = read_file "Day_1/day_1.in" in
   let odgovor1 = naloga1 vsebina_datoteke
   and odgovor2 = naloga2 vsebina_datoteke
   in
-  izpisi_datoteko "day_1/day_1_1.out" odgovor1;
-  izpisi_datoteko "day_1/day_1_2.out" odgovor2
+  izpisi_datoteko "Day_1/day_1_1.out" odgovor1;
+  izpisi_datoteko "Day_1/day_1_2.out" odgovor2
 
